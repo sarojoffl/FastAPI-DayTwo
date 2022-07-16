@@ -12,3 +12,12 @@ class UserTBL(Base):
     first_name = Column('first_name', NullType)
     last_name = Column('last_name', NullType)
     dob = Column('dob', NullType)
+    
+class Person(Base):
+# comment
+   __tablename__ = 'table_person'
+   person_id = Column(Integer, primary_key=True, index=True)
+   person_username = Column('username', NullType)
+   person_password = Column('password', NullType)
+   person_email = Column('email', NullType)
+   blog_id = Column('blog_id', NullType)
